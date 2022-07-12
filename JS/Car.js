@@ -1,5 +1,5 @@
 class Car{
-    constructor(license, driver, passenger){
+    constructor(license, driver,passenger){
         this.id;
         this.license = license;
         this.driver = driver;
@@ -7,10 +7,11 @@ class Car{
     }
 
     printDataCar = function (){
-        console.table(this.driver)
+        console.log(this.driver)
         console.log(this.driver.name)
         console.log(this.driver.document)
         console.log(this.driver.email)  
-        console.log(this.passenger)
-    }
+        console.log(this.passenger) 
+        
+    }   
 }

@@ -2,16 +2,30 @@ class Car{
     Integer id;
     String license;
     Account driver;
-    Integer passenger;
+    private Integer passengers;
 
     public Car (String license, Account driver ) {
         this.license = license;
         this.driver = driver;
+       
         
     }
 
     void printDataCar(){
-        System.out.println("License: " + license + "Name Driver: " + driver.name)
+        System.out.println("License: " + license + "Name Driver: " + driver.name + "Passengers" + passengers)
+    }
+
+
+    public Integer  getPassengers(){
+        return passengers
+    }
+
+    public void setPassengers(Integer passengers){
+        if(passenger==4){
+            this.passengers = passengers;
+        }else{
+            System.out.println("Necesitas asignar 4 puestos");
+        }
     }
 
 }
