@@ -1,4 +1,0 @@
-Person.prototype.walk=function(){
-
-    
-}
