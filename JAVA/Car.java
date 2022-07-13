@@ -1,7 +1,7 @@
 class Car{
-    Integer id;
-    String license;
-    Account driver;
+    private Integer id;
+    private String license;
+    private Account driver;
     private Integer passengers;
 
     public Car (String license, Account driver ) {
@@ -17,7 +17,7 @@ class Car{
 
 
     public Integer  getPassengers(){
-        return passengers
+        return passengers;
     }
 
     public void setPassengers(Integer passengers){
@@ -27,5 +27,7 @@ class Car{
             System.out.println("Necesitas asignar 4 puestos");
         }
     }
+
+    
 
 }
